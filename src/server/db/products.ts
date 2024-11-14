@@ -74,7 +74,7 @@ export async function createProduct(data: typeof ProductTable.$inferInsert) {
         }).onConflictDoNothing({
             target: ProductCustomizationTable.productId
         })
-    } catch (error) {
+    } catch {
         await db.delete(ProductTable).where(eq(ProductTable.id, newProduct.id))
     }
 

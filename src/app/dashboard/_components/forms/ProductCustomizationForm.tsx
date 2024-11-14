@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 
 import { Textarea } from "@/components/ui/textarea";
-import { toast, useToast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { productCustomizationSchema } from "@/schemas/products";
 import { updateProductCustomization } from "@/server/actions/products";
 import { zodResolver } from "@hookform/resolvers/zod";
